@@ -1,0 +1,89 @@
+@import "tailwindcss";
+
+:root {
+  --background: #0f0a1a;
+  --foreground: #f5f0ff;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), system-ui, sans-serif;
+}
+
+::selection {
+  background: rgba(244, 63, 94, 0.3);
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(0.7);
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 3px;
+}
+
+/* ── Multilingual BGM Adaptive Themes ── */
+body {
+  transition: background 1.5s ease-in-out, filter 1.5s ease-in-out;
+}
+
+body.theme-telugu {
+  background: #140713 !important;
+  --background: #140713;
+}
+
+body.theme-telugu-night {
+  background: #0b030b !important;
+  --background: #0b030b;
+  filter: contrast(0.93) brightness(0.93);
+}
+
+body.theme-telugu .glass-card,
+body.theme-telugu div[class*="border-rose-500/20"],
+body.theme-telugu div[class*="border-white/5"] {
+  border-color: rgba(244, 63, 94, 0.35) !important;
+  box-shadow: 0 0 30px rgba(244, 63, 94, 0.12), 0 0 15px rgba(234, 179, 8, 0.04) !important;
+  transition: all 1.5s ease-in-out;
+}
+
+body.theme-telugu-night .glass-card,
+body.theme-telugu-night div[class*="border-rose-500/20"],
+body.theme-telugu-night div[class*="border-white/5"] {
+  border-color: rgba(244, 63, 94, 0.25) !important;
+  box-shadow: 0 0 35px rgba(244, 63, 94, 0.08), 0 0 20px rgba(234, 179, 8, 0.03) !important;
+}
+
+body.theme-hindi {
+  background: #0d0617 !important;
+  --background: #0d0617;
+}
+
+body.theme-english {
+  background: #040914 !important;
+  --background: #040914;
+}
+
+/* ── Privacy Blurring Mode (DevTools / Tab Blur Protection) ── */
+.window-blurred .privacy-sensitive {
+  filter: blur(16px) brightness(0.4) grayscale(50%) !important;
+  pointer-events: none !important;
+  user-select: none !important;
+  transition: filter 0.3s ease, brightness 0.3s ease !important;
+}
