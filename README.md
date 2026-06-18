@@ -26,7 +26,7 @@
 
 <br/>
 
-[🌐 Live Demo](https://twoframes.vercel.app) · [🐛 Report Bug](https://github.com/yoga0061/twoframes/issues/new?template=bug_report.md) · [💡 Request Feature](https://github.com/yoga0061/twoframes/issues/new?template=feature_request.md)
+[🌐 Live Demo](https://two-frames.vercel.app) · [🐛 Report Bug](https://github.com/yoga0061/twoframes/issues/new?template=bug_report.md) · [💡 Request Feature](https://github.com/yoga0061/twoframes/issues/new?template=feature_request.md)
 
 </div>
 
