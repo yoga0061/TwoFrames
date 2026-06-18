@@ -126,7 +126,7 @@ This is a personal project — but if you'd like to suggest features or report a
 
 ## 📄 License
 
-MIT © [Your Name](https://github.com/your-username)
+MIT © [Yoganandha](https://github.com/yoga0061)
 
 ---
 
